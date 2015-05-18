@@ -1,0 +1,78 @@
+//@import "compass/reset";
+@import "base";
+@font-face {
+    font-family: 'Bebas';
+    //src: url('nexa.eot');
+    src: local('☺'),
+    url("Bebas/BEBAS___.ttf") format("truetype")
+}
+body{
+    //background: url(../img/grey_wash_wall.png) !important;
+    //color: #fff;
+    overflow: auto;
+    padding: 30px 100px;
+    background-color: #457CBC;
+    color: #fff;
+    font-family: Bebas;
+}
+#logo{
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+#sections{
+    bottom: 20px;
+    position: absolute;
+    color: #000;
+    right: 50px;
+}
+#top,#bottom{
+    height: 50%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+#top{
+    background-color: $blue;
+    top: 0;
+}
+#bottom{
+    background-color: #fff;
+    bottom: 0;
+    overflow: auto;
+    border-top: 2px solid #000;
+}
+
+a{
+    color: #000;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    left: 50%;
+    margin-left: -180px;
+}
+header{
+    
+    iframe{
+        width: 115px !important;
+    }
+    .twitter-share-button{
+        vertical-align: 1px;
+    }
+    h1{
+        text-align: center;
+        font-size: 100px;
+        border: 1px solid;
+        //padding: 50px 0 62px 0;
+        padding: 5px 0 15px 0;
+        line-height: 117px !important;
+        border-width: 5px 0;
+        text-transform: uppercase;
+    }
+    
+}
+

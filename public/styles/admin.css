@@ -1,0 +1,11 @@
+/* line 1, admin.scss */
+body {
+  width: 463px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+/* line 7, admin.scss */
+body #sendForm {
+  width: 100%;
+}

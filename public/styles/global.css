@@ -1,0 +1,84 @@
+@charset "CP850";
+@font-face {
+  font-family: 'Bebas';
+  src: local("☺"), url("Bebas/BEBAS___.ttf") format("truetype");
+}
+
+/* line 9, global.scss */
+body {
+  overflow: auto;
+  padding: 30px 100px;
+  background-color: #457CBC;
+  color: #fff;
+  font-family: Bebas;
+}
+
+/* line 18, global.scss */
+#logo {
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+/* line 24, global.scss */
+#sections {
+  bottom: 20px;
+  position: absolute;
+  color: #000;
+  right: 50px;
+}
+
+/* line 30, global.scss */
+#top, #bottom {
+  height: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+/* line 36, global.scss */
+#top {
+  background-color: #6db3cd;
+  top: 0;
+}
+
+/* line 40, global.scss */
+#bottom {
+  background-color: #fff;
+  bottom: 0;
+  overflow: auto;
+  border-top: 2px solid #000;
+}
+
+/* line 47, global.scss */
+a {
+  color: #000;
+}
+
+/* line 51, global.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 50%;
+  margin-left: -180px;
+}
+
+/* line 60, global.scss */
+header iframe {
+  width: 115px !important;
+}
+/* line 63, global.scss */
+header .twitter-share-button {
+  vertical-align: 1px;
+}
+/* line 66, global.scss */
+header h1 {
+  text-align: center;
+  font-size: 100px;
+  border: 1px solid;
+  padding: 5px 0 15px 0;
+  line-height: 117px !important;
+  border-width: 5px 0;
+  text-transform: uppercase;
+}

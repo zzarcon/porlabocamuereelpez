@@ -1,0 +1,169 @@
+.social{
+    position: relative;
+}
+
+#allElements{
+    position: absolute;
+    font-family: Arial;
+    font-weight: bold;
+    left: 230px;
+    top: 0px;
+}
+
+#faces{
+    //display: none;
+    text-align: center;
+    #loading{
+        font-family: Arial;
+    }
+    
+    &.load{
+        #loading{
+            display: none;
+        }
+        .face{
+            display: inline;
+        }
+    }
+    .face{
+        display: none;
+        position: relative;
+        
+        .newElement{
+            position: absolute;
+            right: -7px;
+            top: -57px;
+            color: #FFBF00;
+            transform: rotate(40deg);
+            -webkit-transform: rotate(40deg);
+            -moz-transform: rotate(40deg);
+            -ms-transform: rotate(40deg);
+            font-family: Verdana;
+            letter-spacing: 2px;
+            font-weight: bold;
+            z-index: 1;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+            margin: 10px 0;
+            cursor: pointer;
+            -webkit-filter: grayscale(100%);
+            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+            
+            
+            &:hover{
+                -webkit-filter: grayscale(0%);
+                filter: none;
+            }
+        }
+        
+        &:hover .tooltipCustom{
+            display: block !important;
+        }
+        //TOOLTIP
+        .tooltipCustom{
+            
+            position: absolute;
+            display: none;
+            top: -65px;
+            z-index: 2;
+            
+            &.left{
+                left: 0;
+                
+                .triangle{
+                    border-color: #FFBF00 transparent transparent transparent;
+                }
+                .content{
+                    background: #FFBF00;
+                }
+            }
+            &.right{
+                cursor: pointer;
+                right: -20px;
+                
+                .triangle{
+                    right: 45px !important;
+                    border-color: #00CC33 transparent transparent transparent;
+                }
+                .content{
+                    background: #00CC33;
+                    
+                    &:hover{
+                        background: #39E600;
+                        
+                        .triangle{
+                            border-color: #39E600 transparent transparent transparent;
+                        }
+                    }
+                }
+            }
+            .content{
+                display: block;
+                padding: 6px 7px;
+                
+                font-size: 12px;
+                color: #fff;
+                
+                &:first-letter {
+                    //text-transform: uppercase;
+                }
+            }
+            
+            .triangle{
+                border-style: solid;
+                border-width: 7px;
+                height: 0;
+                width: 0;
+                position: absolute;
+                bottom: -14px;
+                right: 5px;
+                margin-left: -10px;
+            }
+            
+            
+        }
+    }
+    
+}
+
+.audiojs{
+    //display: none !important;
+    opacity: 0 !important;
+    
+}
+.social{
+    
+}
+#filters{
+    border-bottom: 5px solid;
+    height: 32px;
+    
+    div{
+        display: inline-block;
+        width: 20%;
+        text-align: center;
+        cursor: pointer;
+        
+        &.active,&:hover{
+            background-color: #FFBF00;
+        }
+    }
+}
+
+#preloadSmilingFaces{
+    //border: 1px solid;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#foot{
+    text-align: center;
+    left: 50%;
+    letter-spacing: 4px;
+    font-family: Verdana;
+    border-top: 5px solid;
+    padding-top: 10px;
+}

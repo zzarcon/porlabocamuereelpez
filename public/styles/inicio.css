@@ -1,0 +1,167 @@
+/* line 1, inicio.scss */
+.social {
+  position: relative;
+}
+
+/* line 5, inicio.scss */
+#allElements {
+  position: absolute;
+  font-family: Arial;
+  font-weight: bold;
+  left: 230px;
+  top: 0px;
+}
+
+/* line 13, inicio.scss */
+#faces {
+  text-align: center;
+}
+/* line 16, inicio.scss */
+#faces #loading {
+  font-family: Arial;
+}
+/* line 21, inicio.scss */
+#faces.load #loading {
+  display: none;
+}
+/* line 24, inicio.scss */
+#faces.load .face {
+  display: inline;
+}
+/* line 28, inicio.scss */
+#faces .face {
+  display: none;
+  position: relative;
+}
+/* line 32, inicio.scss */
+#faces .face .newElement {
+  position: absolute;
+  right: -7px;
+  top: -57px;
+  color: #FFBF00;
+  transform: rotate(40deg);
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  font-family: Verdana;
+  letter-spacing: 2px;
+  font-weight: bold;
+  z-index: 1;
+}
+/* line 46, inicio.scss */
+#faces .face img {
+  height: 150px;
+  width: 150px;
+  margin: 10px 0;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+}
+/* line 55, inicio.scss */
+#faces .face img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: none;
+}
+/* line 61, inicio.scss */
+#faces .face:hover .tooltipCustom {
+  display: block !important;
+}
+/* line 65, inicio.scss */
+#faces .face .tooltipCustom {
+  position: absolute;
+  display: none;
+  top: -65px;
+  z-index: 2;
+}
+/* line 72, inicio.scss */
+#faces .face .tooltipCustom.left {
+  left: 0;
+}
+/* line 75, inicio.scss */
+#faces .face .tooltipCustom.left .triangle {
+  border-color: #FFBF00 transparent transparent transparent;
+}
+/* line 78, inicio.scss */
+#faces .face .tooltipCustom.left .content {
+  background: #FFBF00;
+}
+/* line 82, inicio.scss */
+#faces .face .tooltipCustom.right {
+  cursor: pointer;
+  right: -20px;
+}
+/* line 86, inicio.scss */
+#faces .face .tooltipCustom.right .triangle {
+  right: 45px !important;
+  border-color: #00CC33 transparent transparent transparent;
+}
+/* line 90, inicio.scss */
+#faces .face .tooltipCustom.right .content {
+  background: #00CC33;
+}
+/* line 93, inicio.scss */
+#faces .face .tooltipCustom.right .content:hover {
+  background: #39E600;
+}
+/* line 96, inicio.scss */
+#faces .face .tooltipCustom.right .content:hover .triangle {
+  border-color: #39E600 transparent transparent transparent;
+}
+/* line 102, inicio.scss */
+#faces .face .tooltipCustom .content {
+  display: block;
+  padding: 6px 7px;
+  font-size: 12px;
+  color: #fff;
+}
+/* line 114, inicio.scss */
+#faces .face .tooltipCustom .triangle {
+  border-style: solid;
+  border-width: 7px;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -14px;
+  right: 5px;
+  margin-left: -10px;
+}
+
+/* line 131, inicio.scss */
+.audiojs {
+  opacity: 0 !important;
+}
+
+/* line 139, inicio.scss */
+#filters {
+  border-bottom: 5px solid;
+  height: 32px;
+}
+/* line 143, inicio.scss */
+#filters div {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 149, inicio.scss */
+#filters div.active, #filters div:hover {
+  background-color: #FFBF00;
+}
+
+/* line 155, inicio.scss */
+#preloadSmilingFaces {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* line 162, inicio.scss */
+#foot {
+  text-align: center;
+  left: 50%;
+  letter-spacing: 4px;
+  font-family: Verdana;
+  border-top: 5px solid;
+  padding-top: 10px;
+}
