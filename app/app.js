@@ -6,6 +6,7 @@ import config from './config/environment';
 var App;
 
 Ember.MODEL_FACTORY_INJECTIONS = true;
+Em.LOG_VERSION = false;
 
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
