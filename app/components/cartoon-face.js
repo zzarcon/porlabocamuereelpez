@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   classNames: ['cartoon-face-component'],
-  classNameBindings: ['isHover'],
+  classNameBindings: ['isHover', 'face.name'],
   face: null,
   isHover: false,
 
@@ -10,11 +10,13 @@ export default Ember.Component.extend({
     return new Audio(this.get('src'));
   }.property('src'),
 
-  img: function() {
-    var state = this.get('isHover') ? '_active' : '';
+  activeImg: function() {
+    return 'img/faces/' + this.get('face.name') + '_active.png';
+  }.property('face.name'),
 
-    return 'img/faces/' + this.get('face.name') + state + '.png';
-  }.property('face.name', 'face.quote', 'isHover'),
+  disabledImg: function() {
+    return 'img/faces/' + this.get('face.name') + '.png';
+  }.property('face.name'),
 
   src: function() {
     return 'audio/' + this.get('face.name') + '_' + this.get('face.quote') + '.mp3';

@@ -72,10 +72,6 @@ export default {
     "name": "barcenas",
     "quote": "todoesunaburdamanipulacion"
   }, {
-    "id": 19,
-    "name": "anabotella",
-    "quote": "dosmanzanas"
-  }, {
     "id": 20,
     "name": "camps",
     "quote": "claroquemepagomistrajes"
