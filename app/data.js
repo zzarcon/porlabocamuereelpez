@@ -73,7 +73,7 @@ export default {
     "quote": "todoesunaburdamanipulacion"
   }, {
     "id": 19,
-    "name": "botella",
+    "name": "anabotella",
     "quote": "dosmanzanas"
   }, {
     "id": 20,
@@ -113,7 +113,7 @@ export default {
     "quote": "unapartedeespana"
   }, {
     "id": 29,
-    "name": "cospe",
+    "name": "cospedal",
     "quote": "nadadesubirlosimpuestos"
   }, {
     "id": 30,
@@ -145,7 +145,7 @@ export default {
     "quote": "vamosabajarlosimpuestos"
   }, {
     "id": 37,
-    "name": "esperanza",
+    "name": "aguirre",
     "quote": "alhijoputa"
   }, {
     "id": 38,
@@ -321,15 +321,15 @@ export default {
     "quote": "noseaplanteadotocar"
   }, {
     "id": 81,
-    "name": "zapatero",
+    "name": "zp",
     "quote": "championleague"
   }, {
     "id": 82,
-    "name": "zapatero",
+    "name": "zp",
     "quote": "noestamosenunacrisiseconomica"
   }, {
     "id": 83,
-    "name": "zapatero",
+    "name": "zp",
     "quote": "sistemamassolido"
   }, {
     "id": 84,
