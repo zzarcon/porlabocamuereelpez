@@ -6,6 +6,10 @@ export default Ember.Component.extend({
   face: null,
   isHover: false,
 
+  audio: function() {
+    return new Audio(this.get('src'));
+  }.property('src'),
+
   img: function() {
     var state = this.get('isHover') ? '_active' : '';
 
@@ -17,10 +21,30 @@ export default Ember.Component.extend({
   }.property('face.name', 'face.quote'),
 
   mouseEnter: function() {
+    this.play();
     this.set('isHover', true);
   },
 
   mouseLeave: function() {
+    this.pause();
     this.set('isHover', false);
+  },
+
+  click: function() {
+    this.play();
+  },
+
+  play: function() {
+    var audio = this.get('audio');
+    if (!audio.paused) {
+      return;
+    }
+
+    this.get('audio').play();
+  },
+
+  pause: function() {
+    this.get('audio').pause();
+    this.get('audio').currentTime = 0;
   }
 });
