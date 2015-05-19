@@ -1,5 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.View.extend({
-  elementId: "application-content"
+  elementId: "application-content",
+  classNameBindings: ['isLoaded'],
+  isLoaded: false,
+  delay: 1500,
+
+  loadApp: function() {
+    Em.run.later(this, function() {
+      $('#application-loader').remove();
+      this.set('isLoaded', true);
+    }, this.get('delay'));
+  }.on('didInsertElement')
 });
