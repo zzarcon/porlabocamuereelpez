@@ -1,0 +1,8 @@
+@include keyframes(slideDown) {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 50%;
+  }
+}

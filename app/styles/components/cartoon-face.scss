@@ -3,9 +3,13 @@
 
   width: $size;
   display: inline-block;
-  cursor: pointer;
-
-  &:hover{
+  position: relative;
+  
+  &.mouse-events{
+    cursor: pointer;
+  }
+  
+  &:not(.mouse-events){
     .disabled-img{
       width: 0;
       height: 0;
@@ -16,6 +20,25 @@
     }
   }
 
+  &:hover.mouse-events{
+    .disabled-img{
+      width: 0;
+      height: 0;
+    }
+    .active-img{
+      width: $size;
+      height: $size;
+    }
+    &.mouse-events .share-cartoon{
+      display: block;
+    }
+  }
+  
+  &.mouse-events{
+    button{
+      display: none;
+    }
+  }
   img{
     margin: 10px 0;
 
@@ -31,6 +54,13 @@
       width: 0;
       height: 0;
     }
+  }
+  
+  .share-cartoon{
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
   //Hidden
