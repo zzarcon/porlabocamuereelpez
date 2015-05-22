@@ -8,12 +8,12 @@
   
   .face-content{
     @include animation(slideDown 2s 2s $ease-back-in-out forwards);
+    @include transform(translate(-50%, -50%));
     position: absolute;
     left: 50%;
     top: -100%;
     border: 1px solid;
     padding: 1rem;
-    transform: translate(-50%, -50%);
     border-radius: 5px;
     background-color: $main-blue;
   }
