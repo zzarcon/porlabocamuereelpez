@@ -4,7 +4,7 @@ export default Ember.View.extend({
   elementId: "application-content",
   classNameBindings: ['isLoaded'],
   isLoaded: false,
-  delay: 2000,
+  delay: 1500,
 
   loadApp: function() {
     Em.run.later(this, function() {

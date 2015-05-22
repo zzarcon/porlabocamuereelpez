@@ -5,12 +5,10 @@ export default Ember.Component.extend({
   classNameBindings: ['isHover', 'face.name'],
   face: null,
   isHover: false,
-  audio: null,
 
-  //TODO: Make this responsive, because right we are preloading all the audios at the begining...
-  preloadAudio: function() {
-    this.set('audio', new Audio(this.get('src')));
-  }.on('didInsertElement'),
+  audio: function() {
+    return new Audio(this.get('src'));
+  }.property('src'),
 
   activeImg: function() {
     return 'img/faces/' + this.get('face.name') + '_active.png';
