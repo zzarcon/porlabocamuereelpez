@@ -59,8 +59,33 @@
   .share-cartoon{
     display: none;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 0rem;
+    right: 0rem;
+    color: white;
+    text-decoration: none;
+    background-color: #00b9d5;
+    padding: 5px;
+    
+    &:hover{
+      background-color: white;
+      color: $main-blue;
+      &:before{
+        border-color: white transparent transparent transparent;
+      }
+    }
+
+    &:before{
+      content: " ";
+      border-color: #00b9d5 transparent transparent transparent;
+      border-style: solid;
+      border-width: 10px;
+      height: 0;
+      width: 0;
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      margin-left: -10px;
+    }
   }
 
   //Hidden

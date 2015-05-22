@@ -7,7 +7,7 @@
   left: 0;
   
   .face-content{
-    @include animation(slideDown 2s 2s forwards);
+    @include animation(slideDown 2s 2s $ease-back-in-out forwards);
     position: absolute;
     left: 50%;
     top: -100%;
@@ -16,5 +16,23 @@
     transform: translate(-50%, -50%);
     border-radius: 5px;
     background-color: $main-blue;
+  }
+  .close-face{
+    @include transition(all 0.3s);
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 5px;
+    cursor: pointer;
+
+    &:hover{
+      @include transform(scale(1.1));
+      border-radius: 10px;
+      box-shadow: 1px 1px 13px -1px black;
+    }
   }
 }
