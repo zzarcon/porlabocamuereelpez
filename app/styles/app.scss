@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Oswald";
 @import "config";
 @import "loader";
 @import "components/cartoon-face";
@@ -7,16 +8,27 @@
 }
 html{
   background-color: $main-blue;
+  font-family: Oswald, verdana;
+  color: white;
 }
 #application-content{
   text-align: center;
   opacity: 0;
-  transition: all 1s;
+  transition: all 1.5s;
   visibility: hidden;
 
   &.is-loaded{
     opacity: 1;
     visibility: visible;
+  }
+
+  header{
+    border-color: white;
+    border-style: solid;
+    border-width: 5px 0;
+    font-size: 65px;
+    padding: 0.5rem 0;
+    margin: 1rem 5rem 1rem 5rem;
   }
 }
 #application-loader{
