@@ -9,6 +9,8 @@ export default Ember.Component.extend({
   autoplayDelay: 3000,
   autoplay: false,
 
+  src: Ember.computed.alias('face.src'),
+  
   audio: function() {
     return new Audio(this.get('src'));
   }.property('src'),
@@ -20,10 +22,6 @@ export default Ember.Component.extend({
   disabledImg: function() {
     return 'img/faces/' + this.get('face.name') + '.png';
   }.property('face.name'),
-
-  src: function() {
-    return 'audio/' + this.get('face.name') + '_' + this.get('face.quote') + '.mp3';
-  }.property('face.name', 'face.quote'),
 
   mouseEnter: function() {
     if (!this.get('mouseEvents')) return;
