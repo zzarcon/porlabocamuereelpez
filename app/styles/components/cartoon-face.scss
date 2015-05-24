@@ -18,6 +18,9 @@
       width: $size;
       height: $size;
     }
+    .play-button{
+      display: block;
+    }
   }
 
   &:hover.mouse-events{

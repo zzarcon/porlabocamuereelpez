@@ -15,10 +15,15 @@
     padding: 1rem;
     border-radius: 5px;
     background-color: $main-blue;
-
+    width: 300px;
+    
     &.should-transition{
       @include animation-delay(1s);
     }
+  }
+  .face-share-buttons{
+    margin: 0 auto;
+    margin-top: -1rem;
   }
   .close-face{
     @include transition(all 0.3s);

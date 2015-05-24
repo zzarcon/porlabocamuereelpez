@@ -47,10 +47,8 @@ export default Ember.Component.extend({
 
   play: function() {
     var audio = this.get('audio');
-    if (!audio.paused) {
-      return;
-    }
-
+    if (!audio.paused) return;
+    
     this.get('audio').play();
   },
 

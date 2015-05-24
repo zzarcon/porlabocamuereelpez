@@ -1,0 +1,5 @@
+@mixin default-transition {
+  @include transition-property(all);
+  @include transition-duration($play-button-duration);
+  @include transition-timing-function($play-button-tfunction);
+}
