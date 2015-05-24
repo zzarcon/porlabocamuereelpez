@@ -35,6 +35,19 @@ html{
     padding: 0.5rem 0;
     margin: 1rem 5rem 1rem 5rem;
   }
+  .share-buttons{
+    padding: 0rem 5rem;
+    height: 1.3rem;
+
+    > *{
+      float: left;
+    }
+
+    .twitter-share-button{
+      margin-top: 4px;
+      margin-left: 10px;
+    }
+  }
 }
 #application-loader{
   p{
