@@ -6,7 +6,8 @@ export default Ember.Component.extend({
   mouseEvents: true,
   face: null,
   isHover: false,
-  autoplayDelay: 4000,
+  autoplayDelay: 3000,
+  autoplay: false,
 
   audio: function() {
     return new Audio(this.get('src'));
@@ -39,6 +40,8 @@ export default Ember.Component.extend({
   },
 
   click: function() {
+    if (this.get('mouseEvents')) return;
+    
     this.play();
   },
 
@@ -56,9 +59,8 @@ export default Ember.Component.extend({
     this.get('audio').currentTime = 0;
   },
 
-  autoplay: function() {
-    if (this.get('mouseEvents')) return;
-
+  doAutoplay: function() {
+    if (!this.get('autoplay')) return;
     Ember.run.later(this, this.play, this.get('autoplayDelay'));
   }.on('didInsertElement'),
 

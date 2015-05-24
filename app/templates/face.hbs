@@ -1,4 +1,4 @@
-<div class="face-content">
-  {{cartoon-face face=this.model mouseEvents=false}}
+<div {{bind-attr class=":face-content shouldTransition"}}>
+  {{cartoon-face face=model mouseEvents=false autoplay=shouldTransition}}
   {{#link-to "application" class="close-face"}}✖{{/link-to}}
 </div>

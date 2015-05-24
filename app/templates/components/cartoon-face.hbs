@@ -1,4 +1,4 @@
 <img {{bind-attr src="disabledImg" alt="face.quote"}} class="disabled-img">
 <img {{bind-attr src="activeImg" alt="face.quote"}} class="active-img">
-{{#link-to "face" face.quote class="share-cartoon"}}Compartir{{/link-to}}
+{{#link-to "face" face.quote (query-params transition=false) class="share-cartoon"}}Compartir{{/link-to}}
 <button {{action "play"}}>Volver a reproducir</button>

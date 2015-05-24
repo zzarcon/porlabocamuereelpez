@@ -8,4 +8,6 @@ var app = new EmberApp({
   }
 });
 
+app.import('bower_components/ember-backdoor/backdoor.js');
+
 module.exports = app.toTree();

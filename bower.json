@@ -13,6 +13,7 @@
     "loader.js": "ember-cli/loader.js#3.2.0",
     "qunit": "~1.17.1",
     "sass-flex-mixin": "1.0.0",
-    "bourbon": "3.2.1"
+    "bourbon": "3.2.1",
+    "ember-backdoor": "zzarcon/ember-backdoor#master"
   }
 }
