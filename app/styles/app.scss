@@ -63,3 +63,19 @@ html{
 #github-img img{
   z-index: 9;
 }
+footer{
+  border-top: 2px solid white;
+  
+  .heart{
+    color: lightcoral;
+    font-size: 30px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
